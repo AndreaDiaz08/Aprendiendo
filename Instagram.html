@@ -1,32 +1,97 @@
 <html>
     <head>
        <style>
-.Contenedor-inicial{
+
+.puff{
+    background-color:cornsilk;
+    height: 80px;
+    display: flex;
+    flex-direction: row; 
+    
+    }
+
+    .Contenedor-inicial{
      display: flex;
-     background-color: beige;
+     background-color:cornsilk;
      align-items: center;
-     justify-content: space-around;
-     width: 100%;
-     height: 180px;
+     justify-content: center;
+     width: 30%;
+     height: 80px;
            }
 		.imagenes{
 			display: flex;
-			max-width: 100px;
+			max-width: 30px;
 			margin: 0px;   
-            justify-content: flex-end;
+            justify-content: flex;
             align-items: flex-start;              
            }
         .Instagram{
             justify-content: flex-end;
-            align-content: initial;         
+            align-content: initial; 
+            font-style: italic;
+            font-family:'Times New Roman';
+            font-size: 30px;
+            color:black;
+            font-weight:100;
+            font-variant: normal;
+            text-transform: none;
+            line-height:15px; 
+            word-spacing: 520pt;   
+               
            }
+    
+    .contenedor-busqueda{
+    background-color:cornsilk;
+    justify-content: center;
+    width: 40%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+     }
         .Buscar{
-            justify-content: space-between;
+            justify-content: center;
+            align-items: center;
+            height: 30px;
+            align-self: center;
+            color:black;
+            font-weight:100;
+            font-variant: normal;
+            text-transform: none;
+            line-height:15px;
             }
+
+    .contenedor-iniciarsesion{
+    background-color:cornsilk;
+    justify-content:center;
+    width: 30%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    
+    }
         .iniciar-sesion{
-            color: blueviolet;
+            font-size:10px;
+            font-family:Verdana,Helvetica;
+            font-weight:bold;
+            color:white;
+            background:#638cb5;
+            border:0px;
+            width:100px;
+            height:30px;
             }
+
         .Registrarse{
+            justify-content:space-around;
+            align-content:center; 
+            font-style:normal;
+            font-family:'Times New Roman';
+            font-size: 20px;
+            color:black;
+            font-weight:100;
+            font-variant: normal;
+            text-transform: none;
+            line-height:15px;
+            word-spacing: 5pt;   
         }
 
 .contenedor-centro{
@@ -48,12 +113,20 @@
        </style>
     </head>
     <body>
-        <div class="Contenedor-inicial">
-            <img class="imagenes" src="https://image.flaticon.com/icons/svg/87/87390.svg">
-            <h1 class="instagram">instagram </h1> 
-            <input placeholder="buscar" class="Buscar">
-            <button class="iniciar-sesion">iniciar sesion </button>
-            <h1 class="Registrase">Registrarse</h1>
+        <div class="puff">
+            <div class="Contenedor-inicial">
+                        <img class="imagenes" src="https://image.flaticon.com/icons/svg/87/87390.svg">
+                        <h1 class="instagram">   |instagram </h1> 
+            </div>
+    
+            <div class="contenedor-busqueda">
+                <input placeholder="buscar" class="Buscar">
+             </div>
+             
+             <div class="contenedor-iniciarsesion">
+                <button class="iniciar-sesion">iniciar sesion </button>
+                <h1 class="Registrarse">   Registrarse</h1>
+             </div> 
         </div>
 
          <div class="contenedor-centro">
